@@ -10,9 +10,7 @@
  },
  "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start-dev": "parcel index.html",
-    "start": "nodemon server.js",
-    "build": "parcel build index.html"
+    "start": "node server.js",
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.4"
