@@ -285,4 +285,16 @@
 
 	</body>
 </html>
-<script src="ida-sdk/App.js"></script>
+<script src="ida-sdk/InformedDocAnalyzer.js"></script>
+<script>
+	InformedDocAnalyzer.initialize({
+		authorization: 'ZGVtb0Bkcml2ZWluZm9ybWVkLmNvbTpwQHNzdzByZA==',
+		manualCaptureDelaySeconds: 1,
+		primaryBtnCssClass: 'primary-button-css',
+		secondaryBtnCssClass: 'secondary-button-css',
+		onStartLoading: () => alert('OnStartLoading Called'),
+		onStopLoading: () => alert('OnStopLoading Called'),
+	}).captureDocument({
+		documentTypes: ['driver_license_front', 'driver_license_back']
+	}, (errors) => console.log(errors), (success) => cibs)
+</script>
