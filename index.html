@@ -627,7 +627,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 			onStopLoading: () => alert('OnStopLoading Called'),
 		});
 		informedDocAnalyzerSDK.captureDocument({
-			documentTypes: ["driver_license_back"],
+			documentTypes: ["driver_license_front", "driver_license_back"],
 		}, (errors) => {}, (success) => alert(JSON.stringify(success)));
 	</script>
 
